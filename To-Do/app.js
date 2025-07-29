@@ -3,6 +3,7 @@ const tareas = [];
 let respuesta = " ";
 //const tareaPendiente = [];
 //const tareaFinalizada = [];
+//algo para git
 
 
 class Tarea {
