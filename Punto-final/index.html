@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Punto Final</title>
+  </head>
+  <body>
+    <style>
+      body {
+        margin: 0; /* Elimina márgenes predeterminados */
+        height: 100vh; /* Ocupa toda la altura de la pantalla */
+        display: flex; /* Activa Flexbox */
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+      }
+      #boton {
+        width: 60px; /* Mismo ancho y alto */
+        height: 60px;
+        border-radius: 50%; /* Hace que sea un círculo perfecto */
+        background-color: #000000;
+        color: white;
+        /*border: 3px solid red;*/
+        font-size: 10px;
+        cursor: pointer;
+        user-select: none; /* Evita que el texto sea seleccionable */
+        /*box-shadow: 10px 10px 10px rgba(0, 174, 255, 0.1); /* Sombra opcional */
+      }
+
+      /* Efecto hover */
+      #boton:hover {
+        /*transform: scale(1.); /* Agranda un 10% */
+        /*background-color: #4e4e4d;*/
+        color: rgb(255, 247, 0);
+        transition: 1s;
+      }
+      #boton:hover {
+        transform: scale(2); /* Agranda un 10% */
+        transition: 5s;
+      }
+    </style>
+    <button id="boton">Apagar</button>
+    <script src="app.js"></script>
+  </body>
+</html>
