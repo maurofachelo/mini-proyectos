@@ -1,0 +1,24 @@
+-----------------------------
+
+registro de gastos fijos
+
+
+
+alquiler
+luz
+gas
+ABL
+Tarjeta
+internet
+lineas movil
+plataformas
+colegio
+
+
+si los gastos superan cierto monto avisar que se estan superando los montos previstos en el presupuesto
+
+distintos console.log que indique que superan el 20%, 30%, 40%, etc\ (para esto usar if, if else, else) ya que lo pide el TP
+
+hacer un swich, que indique 1 carga de montos, 2 consulta, 3 consulta de estado financiero
+
+https://drive.google.com/file/d/1ucsuqYMkTfA3NKtDQXzHpsMREHYDEK2Z/view?usp=sharing
