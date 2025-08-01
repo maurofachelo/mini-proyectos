@@ -115,8 +115,16 @@ function vender_item(id) {
         guardarPartida();
     }
 }
+
+        //img vendedor con evento para que se cargue desp del DOM
+    document.addEventListener('DOMContentLoaded', function() {
+        const imgVendedor = document.querySelector("#vendedor")
+        imgVendedor.innerHTML = '<img src="imagenes/vendedor.png" title="Vendedor"/>'
+        infoJugador();
+    });
+
     // Inicializar la interfaz
-infoJugador();
+    infoJugador();
     
 
 

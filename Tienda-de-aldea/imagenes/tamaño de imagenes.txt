@@ -1,0 +1,8 @@
+
+tamaño de imagenes
+
+escudo 128 x 128
+espada 128 x 128
+pocion 128 x 128
+
+vendedor 594 x 639

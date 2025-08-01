@@ -1,0 +1,209 @@
+:root {
+  --color-primary: #8B4513; /* Marrón madera */
+  --color-secondary: #DAA520; /* Oro */
+  --color-dark: #1A120B; /* Negro marrón */
+  --color-light: #F5DEB3; /* Beige */
+  --color-accent: #B22222; /* Rojo oscuro */
+}
+
+body {
+  font-family: 'MedievalSharp', cursive, sans-serif;
+  background-color: var(--color-dark);
+  background-image: linear-gradient(rgba(26, 18, 11, 0.9), rgba(26, 18, 11, 0.7)), 
+                    url('imagenes/fondo-piedra.jpg');
+  color: var(--color-light);
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 900px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Vendedor */
+#vendedor {
+  margin: 0 auto 0;
+  width: 200px;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.5));
+}
+
+#vendedor img {
+  width: 100%;
+  height: auto;
+  border: 4px solid var(--color-primary);
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+#vendedor img:hover {
+  transform: scale(1.03);
+}
+
+/* Mensaje de bienvenida */
+.mensaje {
+  text-align: center;
+  margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.mensaje h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--color-light);
+  display: inline;
+}
+
+.mensaje h2.nombre {
+  margin: 0;
+  font-size: 1.8rem;
+  color: var(--color-secondary);
+  display: inline;
+}
+
+/* Información del jugador */
+.informacion {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 0;
+  flex-wrap: wrap;
+}
+
+.informacion h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.informacion h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.informacion .nombre {
+  color: var(--color-secondary);
+}
+
+.informacion .oro {
+  color: var(--color-secondary);
+}
+
+/* Tienda e Inventario */
+.tienda, .inventario {
+  background-color: rgba(139, 69, 19, 0.2);
+  border: 2px solid var(--color-primary);
+  border-radius: 12px;
+  padding: 5px;
+  margin: 5px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  min-height: 150px;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.tienda::before {
+  content: "TIENDA";
+  width: 100%;
+  text-align: center;
+  color: var(--color-secondary);
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.inventario::before {
+  content: "INVENTARIO";
+  width: 100%;
+  text-align: center;
+  color: var(--color-secondary);
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+/* Items */
+.tienda img, .inventario img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border: 2px solid var(--color-primary);
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tienda img:hover, .inventario img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+/* Tooltips */
+img[title] {
+  position: relative;
+}
+
+img[title]:hover::after {
+  content: attr(title) " oro";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  border: 1px solid var(--color-primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mensaje {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .informacion {
+    gap: 15px;
+  }
+  
+  .tienda, .inventario {
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  .tienda img, .inventario img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tienda img, .inventario img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .informacion {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
