@@ -60,7 +60,7 @@
     let itemsInventario = document.querySelector(".inventario")
     itemsInventario.innerHTML = " " // vacio el div
     for (let item of jugador.inventario){
-        itemsInventario.innerHTML += `<img src= "imagenes/${item.imagen}"  data-id= "${item.id}" class="itemAVender" title= "${item.nombre}" data-precio= "${item.precio}"/>`;
+        itemsInventario.innerHTML += `<img src= "imagenes/${item.imagen}"  data-id= "${item.id}" class="itemAVender" title= "${item.precio}" data-precio= "${item.precio}"/>`;
     }
 
     const itemInventarioVender = document.querySelectorAll(".itemAVender") 
@@ -78,7 +78,7 @@
     itemsShop.innerHTML = " " // vacio el div
     for (let item of shop){
         // Con += concateno los elementos HTML
-        itemsShop.innerHTML += `<img src= "imagenes/${item.imagen}" data-id= "${item.id}" class="itemsShop" title= "${item.nombre}" data-precio= "${item.precio}" />`;
+        itemsShop.innerHTML += `<img src= "imagenes/${item.imagen}" data-id= "${item.id}" class="itemsShop" title= "${item.precio}" data-precio= "${item.precio}" />`;
     }
 
     let itemsALaVentaShop = document.querySelectorAll(".itemsShop")
