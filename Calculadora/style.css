@@ -1,0 +1,89 @@
+/* Estilo general */
+body {
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Caja de la calculadora */
+#calculadora {
+  background-color: #1f1f1f;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  max-width: 350px;
+  width: 100%;
+}
+
+/* Pantalla */
+#pantalla {
+  width: 90%;
+  height: 60px;
+  font-size: 36px;
+  text-align: right;
+  padding: 0 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #2d2d2d;
+  color: white;
+  outline: none;
+}
+
+/* Botones */
+#botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+#botones button {
+  padding: 15px;
+  font-size: 1.3rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#botones button:hover {
+  background-color: #444;
+}
+
+#botones button:active {
+  background-color: #555;
+}
+
+#botones .igual {
+  background-color: #ff9800;
+  color: black;
+  grid-column: span 2; /* ← Ocupa el ancho de 2 botones */
+}
+
+#botones .igual:hover {
+  background-color: #e68a00;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 500px) {
+  #pantalla {
+    font-size: 1.5rem;
+    height: 50px;
+  }
+
+  #botones {
+    gap: 8px;
+  }
+
+  #botones button {
+    padding: 12px;
+    font-size: 1.1rem;
+  }
+}
+
