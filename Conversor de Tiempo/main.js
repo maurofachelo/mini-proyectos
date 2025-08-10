@@ -19,6 +19,7 @@ function hacerCalculo(){
     liHoras.textContent = `Horas: ${horas}`;
     liMinutos.textContent = `Minutos: ${minutos}`;
     liSegundos.textContent = `Segundos: ${segundos}`;
+    contenedor.value = ""
 }
 
 
