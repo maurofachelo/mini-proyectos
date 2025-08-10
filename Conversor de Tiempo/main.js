@@ -14,12 +14,20 @@ function hacerCalculo(){
     const minutos = horas * 60;
     const segundos = minutos * 60;
     
+    if (dias>0){
     respuesta.innerHTML = `"Se informa que ${dias} dia/s equivale a:"`
 
     liHoras.textContent = `Horas: ${horas}`;
     liMinutos.textContent = `Minutos: ${minutos}`;
     liSegundos.textContent = `Segundos: ${segundos}`;
     contenedor.value = ""
+    } else{
+        respuesta.innerHTML = `"debe ingresar un valor valido"`
+        liHoras.textContent = ``;
+        liMinutos.textContent = ``;
+        liSegundos.textContent = ``;
+        contenedor.value = ""
+    }
 }
 
 
