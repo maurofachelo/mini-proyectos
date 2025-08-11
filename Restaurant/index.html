@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Cobro</title>
+  </head>
+  <body>
+    <div class="mesa" data-mesa="1">
+      <form>
+        <h3 for="">MESA 1</h3>
+        <!-- 
+            agregar tipos de pago con descuentos
+            cantidades de productos en funcion agregar
+            generar sitio web completo de casa de hamburguesas
+            con liguin para acceder a este sistema de cobro
+            modificar hoja de estilo para que las mesas inactivas no tengan color
+            que se pinten al activarse... hacer CSS yo, usar display grid... luego grid column
+      -->
+        <input
+          type="number"
+          class="numComensales"
+          placeholder="Número de comensales"
+        />
+        <button class="btnActivar">Activar</button>
+
+        <input type="text" placeholder="$$$" class="montoMesa" />
+        <input type="text" placeholder="Concepto" class="conceptoMesa" />
+        <button class="btnAgregar" disabled>Agregar</button>
+        <!--<button id="btnDetalle1">Detalle</button>-->
+        <table>
+          <thead>
+            <tr>
+              <th>Concepto</th>
+              <th>Monto</th>
+            </tr>
+          </thead>
+          <tbody class="detalleMesa"></tbody>
+        </table>
+        <button class="btnTotal">Total</button>
+        <button class="btnLimpiar">Limpiar</button>
+      </form>
+    </div>
+
+    <div class="mesa" data-mesa="2">
+      <form>
+        <h3 for="">MESA 2</h3>
+        <input
+          type="number"
+          class="numComensales"
+          placeholder="Número de comensales"
+        />
+        <button class="btnActivar">Activar</button>
+
+        <input type="text" placeholder="$$$" class="montoMesa" />
+        <input type="text" placeholder="Concepto" class="conceptoMesa" />
+        <button class="btnAgregar" disabled>Agregar</button>
+        <!--<button id="btnDetalle1">Detalle</button>-->
+        <table>
+          <thead>
+            <tr>
+              <th>Concepto</th>
+              <th>Monto</th>
+            </tr>
+          </thead>
+          <tbody class="detalleMesa"></tbody>
+        </table>
+        <button class="btnTotal">Total</button>
+        <button class="btnLimpiar">Limpiar</button>
+      </form>
+    </div>
+
+    <div class="mesa" data-mesa="3">
+      <form>
+        <h3 for="">MESA 3</h3>
+        <input
+          type="number"
+          class="numComensales"
+          placeholder="Número de comensales"
+        />
+        <button class="btnActivar">Activar</button>
+
+        <input type="text" placeholder="$$$" class="montoMesa" />
+        <input type="text" placeholder="Concepto" class="conceptoMesa" />
+        <button class="btnAgregar" disabled>Agregar</button>
+        <!--<button id="btnDetalle1">Detalle</button>-->
+        <table>
+          <thead>
+            <tr>
+              <th>Concepto</th>
+              <th>Monto</th>
+            </tr>
+          </thead>
+          <tbody class="detalleMesa"></tbody>
+        </table>
+        <button class="btnTotal">Total</button>
+        <button class="btnLimpiar">Limpiar</button>
+      </form>
+    </div>
+
+    <div class="mesa" data-mesa="4">
+      <form>
+        <h3 for="">MESA 4</h3>
+        <input
+          type="number"
+          class="numComensales"
+          placeholder="Número de comensales"
+        />
+        <button class="btnActivar">Activar</button>
+
+        <input type="text" placeholder="$$$" class="montoMesa" />
+        <input type="text" placeholder="Concepto" class="conceptoMesa" />
+        <button class="btnAgregar" disabled>Agregar</button>
+        <!--<button id="btnDetalle1">Detalle</button>-->
+        <table>
+          <thead>
+            <tr>
+              <th>Concepto</th>
+              <th>Monto</th>
+            </tr>
+          </thead>
+          <tbody class="detalleMesa"></tbody>
+        </table>
+        <button class="btnTotal">Total</button>
+        <button class="btnLimpiar">Limpiar</button>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
